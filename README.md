@@ -296,7 +296,8 @@ python display_dialog.py --char1 character1/Marty.txt --char2 character2/Emmet.t
 
 
 ```bash
-# Your anwser "Where we're going,we don't need roads."
+# Your anwser 
+"sh replace_in_file character2/Emmet.txt "Where we're going,we don't need roads."
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
