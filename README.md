@@ -79,7 +79,7 @@ Your job will be to replace the last line of the dialog, don't worry I wrote a s
 
 ```bash
 # Your answer
-sh replace_in_file character1/Ygritte.txt "[???]" ""You know nothing, Jon Snow."
+sh replace_in_file character1/Ygritte.txt "You know nothing, Jon Snow."
 ```
 
 Perfect now that you have done a modification on a file, you can commit it on git.
@@ -168,7 +168,7 @@ python display_dialog.py --char1 character1/James.txt --char2 character2/Sylvia.
 
 ```bash
 # Your answer
-sh replace_in_file character1/James.txt "[???]" "Bond"
+sh replace_in_file character1/James.txt "Bond"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -211,7 +211,7 @@ python display_dialog.py --char1 character1/voice_fc.txt --char2 character2/Tyle
 
 ```bash
 # Your answer
-sh replace_in_file character2/Tyler.txt "[???]" "you do not talk about Fight Club!"
+sh replace_in_file character2/Tyler.txt "you do not talk about Fight Club!"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -254,7 +254,7 @@ python display_dialog.py --char1 character1/appollo13.txt --char2 character2/Jim
 
 ```bash
 # Your answer
-sh replace_in_file character2/Jim.txt "[???]" "Houston, we have a problem"
+sh replace_in_file character2/Jim.txt "Houston, we have a problem"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -296,8 +296,7 @@ python display_dialog.py --char1 character1/Marty.txt --char2 character2/Emmet.t
 
 
 ```bash
-# Your anwser
-sh replace_in_file character2/Emmet.txt "[???]" "Where we're going,we don't need roads."
+# Your anwser "Where we're going,we don't need roads."
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -407,13 +406,13 @@ git log
 
 ```bash
 # Your answer
-git revert
+git revert b23871342d25a18b4df9d96ebb07a996059c0b1d
 ```
 
 
 ```bash
 # Your answer
-git revert
+git commit -m "luck text revert"
 ```
 
 **<font color='#ffb799'>Push your changes to the remote server.</font>**
@@ -459,31 +458,30 @@ python display_dialog.py --char1 character1/Forrest.txt --char2 character2/Lady.
 
 ```bash
 # Your answer
-sh replace_in_file character1/Forrest.txt "[???]"
+sh replace_in_file character1/Forrest.txt "life was like a box of chocolates."
+
+
+```bash
+# Your answer
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git add character1/Forrest.txt
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "Forrsest text changed"
 ```
 
 
 ```bash
 # Your answer
-
-```
-
-
-```bash
-# Your answer
-
+git push
 ```
 
 Perfect now let's imagine that we want to go back to the status we had before this exercise.
@@ -493,25 +491,25 @@ Perfect now let's imagine that we want to go back to the status we had before th
 
 ```bash
 # Your answer
-
+git log
 ```
 
 
 ```bash
 # Your answer
-
+git revert 935ff8aac1b96e7d54cf002d8b329de6c5cfa0bb
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "text revert"
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 # Exercise 8: Creating a branch 
