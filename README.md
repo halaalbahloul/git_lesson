@@ -297,7 +297,7 @@ python display_dialog.py --char1 character1/Marty.txt --char2 character2/Emmet.t
 
 ```bash
 # Your anwser 
-"sh replace_in_file character2/Emmet.txt "Where we're going,we don't need roads."
+"sh replace_in_file character2/Emmet.txt "Where we\'re going,we don\'t need roads."
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -344,7 +344,7 @@ For this time I'll give you the answer, Luke said *"NOOOOOOOOOOOOOO NOOOOOOOO"* 
 
 ```bash
 # Your answer
-sh replace_in_file character2/Luke.txt "[???]" "NOOOOOOOOOOOOOO NOOOOOOOO"
+sh replace_in_file character2/Luke.txt "NOOOOOOOOOOOOOO NOOOOOOOO"
 ```
 
 **<font color='#ffb799'>Now commit your changes (but don't push)</font>**
