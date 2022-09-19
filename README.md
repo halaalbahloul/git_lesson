@@ -38,7 +38,7 @@ Of course each command could be reversed, but some of them are harder to reverse
 
 ```bash
 # Your answer
-
+git clone git@github.com:halaalbahloul/git_lesson.git
 ```
 
 If everything is good you should see a directory named **git_lesson** in the following output:
@@ -79,7 +79,7 @@ Your job will be to replace the last line of the dialog, don't worry I wrote a s
 
 ```bash
 # Your answer
-sh replace_in_file character1/Ygritte.txt "[???]"
+sh replace_in_file character1/Ygritte.txt "[???]" ""You know nothing, Jon Snow."
 ```
 
 Perfect now that you have done a modification on a file, you can commit it on git.
@@ -89,7 +89,7 @@ Perfect now that you have done a modification on a file, you can commit it on gi
 
 ```bash
 # Your answer
-
+git commit -m "Ygritte text changed"
 ```
 
 Did not work? that's normal you can't commit files that you did not add to your local changes. To see the files that have changes we usually use `git status`
@@ -106,13 +106,13 @@ git status
 
 ```bash
 # Your answer
-
+git add character1/Ygritte.txt
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "Ygritte text changed"
 ```
 
 **Bravo!** You have done you're first commit
@@ -125,7 +125,7 @@ git status
 
 ```bash
 # Your answer
-
+git push
 ```
 
 Easy right? Now you can check that everything is ok on the github page.
@@ -168,7 +168,7 @@ python display_dialog.py --char1 character1/James.txt --char2 character2/Sylvia.
 
 ```bash
 # Your answer
-sh replace_in_file character1/James.txt "[???]"
+sh replace_in_file character1/James.txt "[???]" "Bond"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -176,25 +176,25 @@ sh replace_in_file character1/James.txt "[???]"
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git add haracter1/James.txt
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "James text changed"
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 ### 5.2 Fight Club
@@ -211,7 +211,7 @@ python display_dialog.py --char1 character1/voice_fc.txt --char2 character2/Tyle
 
 ```bash
 # Your answer
-sh replace_in_file character2/Tyler.txt "[???]"
+sh replace_in_file character2/Tyler.txt "[???]" "you do not talk about Fight Club!"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -219,25 +219,25 @@ sh replace_in_file character2/Tyler.txt "[???]"
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git add character2/Tyler.txt
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "Tyler text changed"
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 ### 5.3 Apollo 13
@@ -254,7 +254,7 @@ python display_dialog.py --char1 character1/appollo13.txt --char2 character2/Jim
 
 ```bash
 # Your answer
-sh replace_in_file character2/Jim.txt "[???]"
+sh replace_in_file character2/Jim.txt "[???]" "Houston, we have a problem"
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -262,25 +262,25 @@ sh replace_in_file character2/Jim.txt "[???]"
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git add character2/Jim.txt
 ```
 
 
 ```bash
 # Your answer
-
+git comitt -m "Jim text changed"
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 ### 5.4 Back to the future part II
@@ -297,7 +297,7 @@ python display_dialog.py --char1 character1/Marty.txt --char2 character2/Emmet.t
 
 ```bash
 # Your anwser
-sh replace_in_file character2/Emmet.txt "[???]"
+sh replace_in_file character2/Emmet.txt "[???]" "Where we're going,we don't need roads."
 ```
 
 **<font color='#ffb799'>And now update changes on remote server</font>**
@@ -305,25 +305,25 @@ sh replace_in_file character2/Emmet.txt "[???]"
 
 ```bash
 # Your answer
-
+git status 
 ```
 
 
 ```bash
 # Your answer
-
+git add character2/Emmet.txt
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "Emmet text changed"
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 # Exercise 6: Revert a local commit
@@ -344,7 +344,7 @@ For this time I'll give you the answer, Luke said *"NOOOOOOOOOOOOOO NOOOOOOOO"* 
 
 ```bash
 # Your answer
-sh replace_in_file character2/Luke.txt "[???]"
+sh replace_in_file character2/Luke.txt "[???]" "NOOOOOOOOOOOOOO NOOOOOOOO"
 ```
 
 **<font color='#ffb799'>Now commit your changes (but don't push)</font>**
@@ -352,19 +352,19 @@ sh replace_in_file character2/Luke.txt "[???]"
 
 ```bash
 # Your answer
-
+git status    
 ```
 
 
 ```bash
 # Your answer
-
+git add character2/Luke.txt
 ```
 
 
 ```bash
 # Your answer
-
+git commit -m "Luke text changed"
 ```
 
 Ok, in fact I was wrong Luke didn't said it twice, it think it was just one simple *"NOOOOO"*.
@@ -379,19 +379,19 @@ Ok, in fact I was wrong Luke didn't said it twice, it think it was just one simp
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git add character2/Luke.txt
 ```
 
 
 ```bash
 # Your anwser
-
+git commit -m "Luke text changed"
 ```
 
 Well after reviewing the scene (that you can find just here: https://www.youtube.com/watch?v=bv20ZoBcdO8 we were right in the first place.
@@ -401,19 +401,19 @@ Well after reviewing the scene (that you can find just here: https://www.youtube
 
 ```bash
 # Your answer
-
+git log
 ```
 
 
 ```bash
 # Your answer
-
+git revert
 ```
 
 
 ```bash
 # Your answer
-
+git revert
 ```
 
 **<font color='#ffb799'>Push your changes to the remote server.</font>**
@@ -421,13 +421,13 @@ Well after reviewing the scene (that you can find just here: https://www.youtube
 
 ```bash
 # Your answer
-
+git status
 ```
 
 
 ```bash
 # Your answer
-
+git push
 ```
 
 You just reverted a local commit and pushed, well done!
